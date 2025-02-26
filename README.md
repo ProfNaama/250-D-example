@@ -1,2 +1,2 @@
 # 250-D-example
-Hi guys - good
+Hi guys - good luck!
