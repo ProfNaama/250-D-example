@@ -1,0 +1,15 @@
+:root {
+    --hotpink:#FF69B4;
+}
+
+* {
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+h1 {
+    color: var(--hotpink);
+}
