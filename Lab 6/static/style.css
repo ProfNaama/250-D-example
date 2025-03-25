@@ -56,6 +56,35 @@ footer {
 }
 
 
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+.active {
+    color: red;
+}
+
 @media only screen and (max-width:650px) {
     .grid-container {
         display: grid;
@@ -69,6 +98,38 @@ footer {
     }
 }
 
-.active {
-    color: red;
-}
+
+
+/* When the screen is less than 650 pixels wide, hide all links, except for the icon.  */
+@media screen and (max-width: 650px) {
+    .topnav li a {
+        display: none;
+    }
+    .topnav li a.firstLink {
+        display: block;
+    }
+
+    .topnav li a.icon {
+      float: right;
+      display: block;
+      color: blue;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon */
+  @media screen and (max-width: 650px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
